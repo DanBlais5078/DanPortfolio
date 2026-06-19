@@ -1,5 +1,5 @@
 import { projects } from "../data/projects";
-import { ExternalLink } from "lucide-react";
+import { Code, TvMinimalPlay } from "lucide-react";
 
 export default function OtherProjects() {
   const otherProjects = projects.filter((p) => !p.featured);
@@ -64,9 +64,10 @@ export default function OtherProjects() {
                   href={project.liveUrl}
                   target="_blank"
                   rel="noreferrer"
-                  className="px-5 py-3 rounded-lg bg-blue-600 hover:bg-blue-500 transition"
+                  className="inline-flex items-center gap-2 px-5 py-3 rounded-lg bg-blue-600 hover:bg-blue-500 transition"
                 >
-                  Live Application
+                    <TvMinimalPlay size={18}/>
+                  Live App
                 </a>
               )}
               {project.githubUrl && (
@@ -76,8 +77,8 @@ export default function OtherProjects() {
                   rel="noreferrer"
                   className="inline-flex items-center gap-2 px-5 py-3 rounded-lg border border-white/20 hover:border-white/40 transition"
               >
-                <ExternalLink size={18}/>
-                  View Github
+                <Code size={18}/>
+                  Github
                 </a>
               )}
             </div>

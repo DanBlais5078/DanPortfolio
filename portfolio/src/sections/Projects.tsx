@@ -1,5 +1,5 @@
 import { useMemo, useState } from "react";
-import { ExternalLink } from "lucide-react";
+import { Code, TvMinimalPlay } from "lucide-react";
 import { projects } from "../data/projects";
 
 export default function Projects() {
@@ -147,9 +147,10 @@ export default function Projects() {
                                 href={featuredProject.liveUrl}
                                 target="_blank"
                                 rel="noreferrer"
-                                className="px-5 py-3 rounded-lg bg-blue-600 hover:bg-blue-500 transition"
+                                className="inline-flex items-center gap-2 px-5 py-3 rounded-lg bg-blue-600 hover:bg-blue-500 transition"
                             >
-                                Live Application
+                                <TvMinimalPlay size={18}/>
+                                Live App
                             </a>
                         )}
 
@@ -160,8 +161,8 @@ export default function Projects() {
                                 rel="noreferrer"
                                 className="inline-flex items-center gap-2 px-5 py-3 rounded-lg border border-white/20 hover:border-white/40 transition"
                             >
-                                <ExternalLink size={18} />
-                                View GitHub
+                                <Code size={18} />
+                                GitHub
                             </a>
                         )}
                     </div>

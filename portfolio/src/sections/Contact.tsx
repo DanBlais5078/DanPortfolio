@@ -113,7 +113,7 @@ export default function Contact() {
 
                         <p>
                             <span className="text-gray-500">Location:</span>{" "}
-                            Canada (open to remote)
+                            Lower Mainland, British Columbia, Canada (also open to remote)
                         </p>
                     </div>
                 </div>
