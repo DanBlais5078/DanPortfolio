@@ -81,11 +81,10 @@ export default function Navbar() {
                             <a
                                 key={link.href}
                                 href={link.href}
-                                className={`h-10 flex items-center transition ${
-                                    isActive
-                                        ? "text-white"
-                                        : "text-gray-400 hover:text-white"
-                                }`}
+                                className={`h-10 flex items-center transition ${isActive
+                                    ? "text-white"
+                                    : "text-gray-400 hover:text-white"
+                                    }`}
                             >
                                 {link.label}
                             </a>
@@ -95,7 +94,6 @@ export default function Navbar() {
                     {/* Socials */}
                     <div className="flex items-center gap-3 ml-2 text-gray-400">
 
-                        {/* GitHub */}
                         <a
                             href="https://github.com/DanBlais5078"
                             target="_blank"
@@ -108,11 +106,10 @@ export default function Navbar() {
                                 fill="currentColor"
                                 viewBox="0 0 24 24"
                             >
-                                <path d="M12 .5C5.7.5.7 5.7.7 12.2c0 5.2 3.4 9.6 8.2 11.1.6.1.8-.3.8-.6v-2.1c-3.3.7-4-1.6-4-1.6-.5-1.2-1.3-1.6-1.3-1.6-1.1-.8.1-.8.1-.8 1.2.1 1.9 1.2 1.9 1.2 1.1 1.9 2.9 1.3 3.6 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-6 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11 11 0 0 1 6 0C17 5 18 5.3 18 5.3c.6 1.6.2 2.8.1 3.1.8.8 1.2 1.9 1.2 3.2 0 4.7-2.7 5.7-5.3 6 .4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6 4.8-1.5 8.2-5.9 8.2-11.1C23.3 5.7 18.3.5 12 .5z"/>
+                                <path d="M12 .5C5.7.5.7 5.7.7 12.2c0 5.2 3.4 9.6 8.2 11.1.6.1.8-.3.8-.6v-2.1c-3.3.7-4-1.6-4-1.6-.5-1.2-1.3-1.6-1.3-1.6-1.1-.8.1-.8.1-.8 1.2.1 1.9 1.2 1.9 1.2 1.1 1.9 2.9 1.3 3.6 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-6 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11 11 0 0 1 6 0C17 5 18 5.3 18 5.3c.6 1.6.2 2.8.1 3.1.8.8 1.2 1.9 1.2 3.2 0 4.7-2.7 5.7-5.3 6 .4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6 4.8-1.5 8.2-5.9 8.2-11.1C23.3 5.7 18.3.5 12 .5z" />
                             </svg>
                         </a>
 
-                        {/* LinkedIn */}
                         <a
                             href="https://www.linkedin.com/in/dan-blais-2127042b3"
                             target="_blank"
@@ -125,12 +122,21 @@ export default function Navbar() {
                                 fill="currentColor"
                                 viewBox="0 0 24 24"
                             >
-                                <path d="M20.4 20.4h-3.6v-5.6c0-1.3 0-3-1.8-3s-2.1 1.4-2.1 2.9v5.7H9.3V9h3.4v1.6h.1c.5-.9 1.7-1.8 3.4-1.8 3.6 0 4.3 2.4 4.3 5.5v6.1zM5.3 7.4a2.1 2.1 0 1 1 0-4.2 2.1 2.1 0 0 1 0 4.2zM7.1 20.4H3.6V9h3.5v11.4z"/>
+                                <path d="M20.4 20.4h-3.6v-5.6c0-1.3 0-3-1.8-3s-2.1 1.4-2.1 2.9v5.7H9.3V9h3.4v1.6h.1c.5-.9 1.7-1.8 3.4-1.8 3.6 0 4.3 2.4 4.3 5.5v6.1zM5.3 7.4a2.1 2.1 0 1 1 0-4.2 2.1 2.1 0 0 1 0 4.2zM7.1 20.4H3.6V9h3.5v11.4z" />
                             </svg>
                         </a>
+
                     </div>
 
                     {/* CTA */}
+                    <a
+                        href="../../assets/Resume_DanBlais.pdf"
+                        download
+                        className="ml-2 px-3 py-1.5 rounded-md border border-white/10 text-gray-300 hover:text-white hover:border-blue-400/40 transition"
+                    >
+                        Resume
+                    </a>
+
                     <a
                         href="#contact"
                         className="ml-2 px-4 py-2 rounded-lg bg-blue-600 text-white hover:bg-blue-500 transition flex items-center"
@@ -161,11 +167,10 @@ export default function Navbar() {
                                 key={link.href}
                                 href={link.href}
                                 onClick={() => setOpen(false)}
-                                className={`transition ${
-                                    isActive
-                                        ? "text-white"
-                                        : "hover:text-white"
-                                }`}
+                                className={`transition ${isActive
+                                    ? "text-white"
+                                    : "hover:text-white"
+                                    }`}
                             >
                                 {link.label}
                             </a>
@@ -188,6 +193,15 @@ export default function Navbar() {
                             className="hover:text-white transition"
                         >
                             LinkedIn
+                        </a>
+
+                        <a
+                            href="../../assets/Resume_DanBlais.pdf"
+                            download
+                            onClick={() => setOpen(false)}
+                            className="hover:text-white transition"
+                        >
+                            Resume
                         </a>
                     </div>
 

@@ -1,3 +1,5 @@
+import headshot from "../assets/headshot.jpg"
+
 export default function Hero() {
     return (
         <section id="hero" className="min-h-[85vh] flex items-center">
@@ -29,9 +31,6 @@ export default function Hero() {
                                 "Express",
                                 "SQL",
                                 "REST APIs",
-                                "Authentication",
-                                "Git / GitHub",
-                                "Vercel / Deployment"
                             ].map((tech) => (
                                 <span
                                     key={tech}
@@ -64,7 +63,7 @@ export default function Hero() {
                         <div className="relative">
                             <div className="w-72 h-72 md:w-96 md:h-96 rounded-2xl overflow-hidden border border-white/10 bg-white/[0.03]">
                                 <img
-                                    src="/profile.jpg"
+                                    src={headshot}
                                     alt="Profile"
                                     className="w-full h-full object-cover"
                                 />
