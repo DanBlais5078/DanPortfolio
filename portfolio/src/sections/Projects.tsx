@@ -36,7 +36,7 @@ export default function Projects() {
                         {selectedImage ? (
                             <img
                                 src={selectedImage}
-                                className="w-full h-full object-cover"
+                                className="w-full h-full object-fill object-top"
                                 alt="screenshot"
                             />
                         ) : (
@@ -47,7 +47,7 @@ export default function Projects() {
                     </div>
 
                     {/* Thumbnails */}
-                    <div className="grid grid-cols-4 gap-2 mt-4">
+                    <div className="grid grid-cols-6 gap-2 mt-4">
                         {screenshots.map((image) => (
                             <button
                                 key={image}
@@ -59,7 +59,7 @@ export default function Projects() {
                             >
                                 <img
                                     src={image}
-                                    className="w-full h-full object-cover"
+                                    className="w-full h-full object-fill object-top"
                                     alt="thumbnail"
                                 />
                             </button>

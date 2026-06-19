@@ -48,7 +48,7 @@ export default function Navbar() {
                 <div className="flex items-center gap-2">
                     <a href="#hero" className="flex items-center gap-2 group">
                         {/* Logo */}
-                        <div className="w-10 h-10 rounded-full bg-blue-600 flex items-center justify-center shadow-md shadow-blue-500/20 group-hover:scale-105 transition">
+                        <div className="w-10 h-10 rounded-full bg-blue-600 flex items-center justify-center shadow-md shadow-blue-500/20 group-hover:scale-110 transition">
 
                             <svg viewBox="0 0 28 28" className="w-7 h-7">
 
