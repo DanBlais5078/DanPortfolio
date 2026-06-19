@@ -47,7 +47,6 @@ export default function Navbar() {
         <nav className="sticky top-0 z-50 border-b border-white/10 bg-[#0b0f19]/70 backdrop-blur-md">
             <div className="flex justify-between items-center px-8 py-5 max-w-7xl mx-auto">
 
-                {/* Logo */}
                 <a href="#hero" className="flex items-center gap-2 group">
                     <div className="w-10 h-10 rounded-full bg-blue-600 flex items-center justify-center shadow-md shadow-blue-500/20 group-hover:scale-110 transition">
 
@@ -69,7 +68,6 @@ export default function Navbar() {
                     </h1>
                 </a>
 
-                {/* Desktop Nav */}
                 <div className="hidden md:flex items-center gap-6 text-sm text-gray-400">
 
                     {/* Links */}
@@ -128,9 +126,8 @@ export default function Navbar() {
 
                     </div>
 
-                    {/* CTA */}
                     <a
-                        href="../../assets/Resume_DanBlais.pdf"
+                        href="../../../public/Resume_DanBlais.pdf"
                         download
                         className="ml-2 px-3 py-1.5 rounded-md border border-white/10 text-gray-300 hover:text-white hover:border-blue-400/40 transition"
                     >
