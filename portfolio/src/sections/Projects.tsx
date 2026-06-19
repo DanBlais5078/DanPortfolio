@@ -8,7 +8,7 @@ export default function Projects() {
         []
     );
 
-    const screenshots = featuredProject?.media.screenshots ?? [];
+    const screenshots = featuredProject?.media?.screenshots ?? [];
     const [selectedImage, setSelectedImage] = useState(screenshots[0]);
 
     if (!featuredProject) return null;
