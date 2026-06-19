@@ -127,7 +127,7 @@ export default function Navbar() {
                     </div>
 
                     <a
-                        href="../../../public/Resume_DanBlais.pdf"
+                        href="/Resume_DanBlais.pdf"
                         download
                         className="ml-2 px-3 py-1.5 rounded-md border border-white/10 text-gray-300 hover:text-white hover:border-blue-400/40 transition"
                     >
