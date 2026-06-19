@@ -50,19 +50,28 @@ export default function Projects() {
                     <div className="grid grid-cols-6 gap-2 mt-4">
                         {screenshots.map((image) => (
                             <button
-                                key={image}
-                                onClick={() => setSelectedImage(image)}
-                                className={`aspect-video rounded-md border overflow-hidden transition ${selectedImage === image
-                                        ? "border-blue-500"
-                                        : "border-white/10 hover:border-white/30"
-                                    }`}
-                            >
-                                <img
-                                    src={image}
-                                    className="w-full h-full object-fill object-top"
-                                    alt="thumbnail"
-                                />
-                            </button>
+                            key={image}
+                            onClick={() => setSelectedImage(image)}
+                            className={`
+                                aspect-video rounded-md overflow-hidden
+                                border transition-all duration-200
+                        
+                                ${selectedImage === image
+                                    ? "border-4 border-blue-500 shadow-[0_0_12px_rgba(59,130,246,0.25)] scale-[1.02]"
+                                    : "border-white/10 hover:border-blue-400/40 hover:shadow-[0_0_10px_rgba(59,130,246,0.15)]"
+                                }
+                            `}
+                        >
+                            <img
+                                src={image}
+                                className="
+                                    w-full h-full object-fill object-top
+                                    transition duration-200
+                                    hover:scale-[1.02]
+                                "
+                                alt="thumbnail"
+                            />
+                        </button>
                         ))}
                     </div>
                 </div>

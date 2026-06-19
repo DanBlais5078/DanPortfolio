@@ -7,6 +7,7 @@ import Skills from "./sections/Skills"
 import Education from "./sections/Education"
 import Contact from "./sections/Contact";
 import Navbar from "./components/navbar/Navbar";
+import FadeInSection from "./components/animation/FadeInSection";
 
 export default function App() {
   return (
@@ -55,13 +56,33 @@ export default function App() {
           },
         }}
       />
-      <Hero />
-      <Projects />
-      <OtherProjects />
-      <About />
-      <Skills />
-      <Education />
-      <Contact />
+      <FadeInSection>
+        <Hero />
+      </FadeInSection>
+
+      <FadeInSection>
+        <Projects />
+      </FadeInSection>
+
+      <FadeInSection>
+        <OtherProjects />
+      </FadeInSection>
+
+      <FadeInSection>
+        <About />
+      </FadeInSection>
+
+      <FadeInSection>
+        <Skills />
+      </FadeInSection>
+
+      <FadeInSection>
+        <Education />
+      </FadeInSection>
+
+      <FadeInSection>
+        <Contact />
+      </FadeInSection>
     </div>
   );
 }

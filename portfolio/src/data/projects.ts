@@ -4,6 +4,7 @@ import productsRegular from "../assets/products0.png";
 import productsAdmin from "../assets/products_admin.png"
 import editingProduct from "../assets/edit_product.png"
 import updatedProduct from "../assets/updated_product.png"
+import levelEditor from "../assets/leveleditor.mp4"
 
 export type Project = {
     title: string;
@@ -15,7 +16,7 @@ export type Project = {
 
     media?: {
         screenshots?: string[];
-        gif?: string;
+        video?: string;
     };
 
     caseStudy?: {
@@ -88,7 +89,7 @@ export const projects: Project[] = [
     {
         title: "2D TiledMap Level Editor",
         description:
-            "A work-in-progress Java-based 2D tilemap level editor for creating game worlds with multi-layer editing, tileset importing, and save/load functionality. Built with LibGDX.",
+            "A work-in-progress Java-based 2D tilemap level editor for creating game worlds with multi-layer editing, tileset importing, and save/load functionality. Built with LibGDX, it will eventually include a runtime component to test levels during development.",
 
         tech: ["Java", "LibGDX", "MVC", "ECS"],
 
@@ -96,7 +97,7 @@ export const projects: Project[] = [
             "https://gitfront.io/r/DanBlais5078/GQo8fRVkMkSd/ProjectMageLite/",
 
         media: {
-            gif: "/mage-lite-demo.gif",
+            video: levelEditor,
         },
     },
 ];
