@@ -193,7 +193,7 @@ export default function Navbar() {
                         </a>
 
                         <a
-                            href="../../assets/Resume_DanBlais.pdf"
+                            href="/Resume_DanBlais.pdf"
                             download
                             onClick={() => setOpen(false)}
                             className="hover:text-white transition"
