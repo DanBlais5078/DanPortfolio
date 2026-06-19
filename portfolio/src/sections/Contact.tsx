@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Mail, Phone, MapPin } from "lucide-react";
 import toast from "react-hot-toast";
 
 export default function Contact() {
@@ -90,31 +91,47 @@ export default function Contact() {
                         <li>• Collaboration on web projects</li>
                     </ul>
 
-                    <div className="text-sm text-gray-400 space-y-2">
-                        <p>
-                            <span className="text-gray-500">Email:</span>{" "}
-                            <a
-                                href="mailto:blaiswebsolutions@gmail.com"
-                                className="text-gray-300 hover:text-blue-400 transition"
-                            >
-                                blaiswebsolutions@gmail.com
-                            </a>
-                        </p>
+                    <div className="text-sm text-gray-400 space-y-4">
 
-                        <p>
-                            <span className="text-gray-500">Phone:</span>{" "}
-                            <a
-                                href="tel:6132665989"
-                                className="text-gray-300 hover:text-blue-400 transition"
-                            >
-                                613-266-5989
-                            </a>
-                        </p>
+                        {/* Email */}
+                        <div className="flex items-start gap-3">
+                            <Mail size={18} className="text-blue-400 mt-1" />
+                            <div>
+                                <p className="text-gray-500 text-xs">Email</p>
+                                <a
+                                    href="mailto:blaiswebsolutions@gmail.com"
+                                    className="text-gray-300 hover:text-blue-400 transition"
+                                >
+                                    blaiswebsolutions@gmail.com
+                                </a>
+                            </div>
+                        </div>
 
-                        <p>
-                            <span className="text-gray-500">Location:</span>{" "}
-                            Lower Mainland, British Columbia, Canada (also open to remote)
-                        </p>
+                        {/* Phone */}
+                        <div className="flex items-start gap-3">
+                            <Phone size={18} className="text-blue-400 mt-1" />
+                            <div>
+                                <p className="text-gray-500 text-xs">Phone</p>
+                                <a
+                                    href="tel:6132665989"
+                                    className="text-gray-300 hover:text-blue-400 transition"
+                                >
+                                    613-266-5989
+                                </a>
+                            </div>
+                        </div>
+
+                        {/* Location */}
+                        <div className="flex items-start gap-3">
+                            <MapPin size={18} className="text-blue-400 mt-1" />
+                            <div>
+                                <p className="text-gray-500 text-xs">Location</p>
+                                <p className="text-gray-300">
+                                    Lower Mainland, British Columbia, Canada (remote-friendly)
+                                </p>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
 
@@ -149,7 +166,7 @@ export default function Contact() {
                         onChange={handleChange}
                         placeholder="Your message"
                         rows={5}
-                        className="w-full px-4 py-3 rounded-lg bg-black/30 border border-white/10 text-gray-200 focus:outline-none focus:border-blue-500"
+                        className="w-full h-48 px-4 py-4 rounded-lg bg-black/30 border border-white/10 text-gray-200 focus:outline-none focus:border-blue-500"
                         required
                     />
 

@@ -12,14 +12,13 @@ export default function Hero() {
                         </p>
 
                         <h1 className="text-5xl md:text-7xl font-bold leading-tight mb-6">
-                            Building modern web applications with React and Node.js
+                            Building production-ready web applications with React and Node.js
                         </h1>
 
                         <p className="text-xl text-gray-400 mb-8 leading-relaxed">
-                            I design and develop full-stack applications using React,
-                            TypeScript, Node.js, Express, and SQL. My work includes
-                            production systems, secure authentication, REST APIs, and
-                            business-focused software solutions.
+                            Hello, my name is Dan Blais. I’m a full-stack developer focused on building production web applications
+                            with React, TypeScript, Node.js, and Express. I build secure, database-driven systems with authentication,
+                            REST APIs, and deployment-ready architecture for business use cases.
                         </p>
 
                         <div className="flex flex-wrap gap-3 mb-8">
@@ -29,7 +28,10 @@ export default function Hero() {
                                 "Node.js",
                                 "Express",
                                 "SQL",
-                                "Tailwind CSS",
+                                "REST APIs",
+                                "Authentication",
+                                "Git / GitHub",
+                                "Vercel / Deployment"
                             ].map((tech) => (
                                 <span
                                     key={tech}
@@ -68,7 +70,6 @@ export default function Hero() {
                                 />
                             </div>
 
-                            {/* subtle glow */}
                             <div className="absolute inset-0 rounded-2xl bg-blue-500/10 blur-2xl -z-10" />
                         </div>
                     </div>

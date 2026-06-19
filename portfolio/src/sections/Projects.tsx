@@ -114,7 +114,7 @@ export default function Projects() {
                     {/* Engineering */}
                     <div className="rounded-xl border border-white/10 bg-white/[0.03] p-5">
                         <h4 className="text-sm text-blue-400 font-medium mb-2">
-                            Engineering Approach
+                            Architecture Approach
                         </h4>
                         <p className="text-gray-300 text-sm leading-relaxed">
                             {featuredProject.caseStudy.engineering}

@@ -86,9 +86,9 @@ export const projects: Project[] = [
     },
 
     {
-        title: "Project Mage Lite",
+        title: "2D TiledMap Level Editor",
         description:
-            "A Java-based 2D tilemap level editor for creating game worlds with multi-layer editing, tileset importing, and save/load functionality.",
+            "A work-in-progress Java-based 2D tilemap level editor for creating game worlds with multi-layer editing, tileset importing, and save/load functionality. Built with LibGDX.",
 
         tech: ["Java", "LibGDX", "MVC", "ECS"],
 
