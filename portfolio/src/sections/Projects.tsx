@@ -12,6 +12,8 @@ export default function Projects() {
     const [selectedImage, setSelectedImage] = useState(screenshots[0]);
 
     if (!featuredProject) return null;
+    if (!featuredProject.caseStudy) return null;
+    if (!featuredProject.media) return null;
 
     return (
         <section id="projects" data-section className="max-w-7xl mx-auto px-8 py-24">
